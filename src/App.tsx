@@ -19,6 +19,7 @@ function Header() {
         </div>
 
         <nav className="hidden items-center gap-6 md:flex">
+          <NavLink to="/features" className={({isActive})=>isActive? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}>Features</NavLink>
           <NavLink to="/pricing" className={({isActive})=>isActive? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}>Pricing</NavLink>
           <NavLink to="/resources" className={({isActive})=>isActive? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}>Resources</NavLink>
           <NavLink to="/blog" className={({isActive})=>isActive? 'text-slate-900' : 'text-slate-600 hover:text-slate-900'}>Blog</NavLink>
@@ -38,6 +39,7 @@ function Header() {
       {open && (
         <div className="border-t border-slate-200 bg-white md:hidden">
           <div className="container-px mx-auto flex flex-col gap-2 py-3">
+            <NavLink to="/features" className="py-2">Features</NavLink>
             <NavLink to="/pricing" className="py-2">Pricing</NavLink>
             <NavLink to="/resources" className="py-2">Resources</NavLink>
             <NavLink to="/blog" className="py-2">Blog</NavLink>
