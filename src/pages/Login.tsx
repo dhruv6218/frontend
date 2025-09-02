@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Lock, Github, Google } from 'lucide-react'
+import { Mail, Lock, Github, Globe } from 'lucide-react'
 
 export default function Login(){
   const [email, setEmail] = useState('')
@@ -47,7 +47,7 @@ export default function Login(){
             <div className="h-px w-full bg-slate-200"/><span className="text-xs text-slate-500">or</span><div className="h-px w-full bg-slate-200"/>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <button type="button" className="btn btn-outline w-full"><Google className="h-4 w-4"/> Google</button>
+            <button type="button" className="btn btn-outline w-full"><Globe className="h-4 w-4"/> Google</button>
             <button type="button" className="btn btn-outline w-full"><Github className="h-4 w-4"/> GitHub</button>
           </div>
         </form>

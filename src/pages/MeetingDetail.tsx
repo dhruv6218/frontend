@@ -5,6 +5,7 @@ import ActionItemsPanel from '@/components/ActionItemsPanel'
 import ComplianceChecklist from '@/components/ComplianceChecklist'
 import ESignatureWidget from '@/components/ESignatureWidget'
 import ApprovalTracker from '@/components/ApprovalTracker'
+import ExportShare from '@/components/ExportShare'
 
 export default function MeetingDetail(){
   return (
@@ -26,6 +27,7 @@ export default function MeetingDetail(){
           <Player/>
           <AISummaryPanel/>
           <ActionItemsPanel/>
+          <ExportShare/>
         </div>
         <div className="space-y-4">
           <TranscriptPanel/>
